@@ -1,0 +1,15 @@
+query_symbol	resolved_symbol	biotype	protein_coding	source	note
+ARNTL2	BMAL2	protein_coding	True	hgnc_prev_symbol	HGNC:18984, ENSG00000029153; renamed BMAL2 after GENCODE v44 build used here
+DDX58	RIGI	protein_coding	True	hgnc_prev_symbol	HGNC:19102, ENSG00000107201; renamed RIGI (RIG-I)
+HIF1A-AS2	HIF1A-AS2	lncRNA	False	hgnc_symbol	HGNC:43628, RNA long non-coding; absent from v44 gene records
+RPL41P3	RPL41P3	pseudogene	False	hgnc_symbol	HGNC:36531, pseudogene
+FLJ32255	FLJ32255	ncRNA	False	ncbi_gene	GeneID 643977, uncharacterized ncRNA
+LOC100310756	LOC100310756	ncRNA	False	ncbi_gene	GeneID 100310756, uncharacterized ncRNA
+LOC112268287	LOC112268287	ncRNA	False	ncbi_gene	GeneID 112268287, uncharacterized ncRNA
+LOC154761	LOC154761	pseudogene	False	ncbi_gene	GeneID 154761, FAM115C pseudogene
+LOC642969	LOC642969	pseudogene	False	ncbi_gene	GeneID 642969, PGAM1 pseudogene
+LOC653503	LOC653503	pseudogene	False	ncbi_gene	GeneID 653503, GNG10 pseudogene
+LOC653513	LOC653513	pseudogene	False	ncbi_gene	GeneID 653513, PDE4DIP-like pseudogene
+LOC653631	LOC653631	pseudogene	False	ncbi_gene	GeneID 653631, AXIN interactor pseudogene
+SMURF2P1-LRRC37BP1	SMURF2P1-LRRC37BP1	pseudogene	False	ncbi_gene	GeneID 107133515, readthrough transcribed pseudogene
+LOC100419583	NA	unresolved	False	none	no record in GENCODE v44, HGNC, or NCBI Gene; also the single coordinate failure in GB-327

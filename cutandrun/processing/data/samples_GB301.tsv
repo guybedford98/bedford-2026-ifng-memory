@@ -1,0 +1,11 @@
+sample_id	mark	condition	replicate	R1_path	R2_path	is_igg
+Naive_H3K27me3_R1	H3K27me3	Naive	1	merged/Naive_H3K27me3_R1.merged.R1.fastq.gz	merged/Naive_H3K27me3_R1.merged.R2.fastq.gz	false
+Naive_H3K27me3_R2	H3K27me3	Naive	2	merged/Naive_H3K27me3_R2.merged.R1.fastq.gz	merged/Naive_H3K27me3_R2.merged.R2.fastq.gz	false
+Stim_H3K27me3_R1	H3K27me3	Stim	1	merged/Stim_H3K27me3_R1.merged.R1.fastq.gz	merged/Stim_H3K27me3_R1.merged.R2.fastq.gz	false
+Stim_H3K27me3_R2	H3K27me3	Stim	2	merged/Stim_H3K27me3_R2.merged.R1.fastq.gz	merged/Stim_H3K27me3_R2.merged.R2.fastq.gz	false
+Rested_H3K27me3_R1	H3K27me3	Rested	1	merged/Rested_H3K27me3_R1.merged.R1.fastq.gz	merged/Rested_H3K27me3_R1.merged.R2.fastq.gz	false
+Rested_H3K27me3_R2	H3K27me3	Rested	2	merged/Rested_H3K27me3_R2.merged.R1.fastq.gz	merged/Rested_H3K27me3_R2.merged.R2.fastq.gz	false
+Rechallenged_H3K27me3_R1	H3K27me3	Rechallenged	1	merged/Rechallenged_H3K27me3_R1.merged.R1.fastq.gz	merged/Rechallenged_H3K27me3_R1.merged.R2.fastq.gz	false
+Rechallenged_H3K27me3_R2	H3K27me3	Rechallenged	2	merged/Rechallenged_H3K27me3_R2.merged.R1.fastq.gz	merged/Rechallenged_H3K27me3_R2.merged.R2.fastq.gz	false
+pooled_IgG_R1	IgG	pooled	1	GB-249/pooled_IgG_S1_S25_R1_001.trim50.fastq.gz	GB-249/pooled_IgG_S1_S25_R2_001.trim50.fastq.gz	true
+pooled_IgG_R2	IgG	pooled	2	GB-249/pooled_IgG_S2_S26_R1_001.trim50.fastq.gz	GB-249/pooled_IgG_S2_S26_R2_001.trim50.fastq.gz	true

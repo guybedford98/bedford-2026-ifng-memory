@@ -1,0 +1,11 @@
+sample_id	mark	condition	replicate	is_igg	hg38_reads	total_kmetstat_reads	target_kmetstat_reads	pct_target_spikein	scale_factor
+Naive_H3K27me3_R1	H3K27me3	Naive	1	false	109721472	51652	24802	.0200	.403193
+Naive_H3K27me3_R2	H3K27me3	Naive	2	false	126490745	59897	29391	.0200	.340240
+Stim_H3K27me3_R1	H3K27me3	Stim	1	false	118194447	60653	31447	.0200	.317995
+Stim_H3K27me3_R2	H3K27me3	Stim	2	false	126882190	72237	37133	.0200	.269302
+Rested_H3K27me3_R1	H3K27me3	Rested	1	false	123771014	71198	33533	.0200	.298213
+Rested_H3K27me3_R2	H3K27me3	Rested	2	false	127684292	64247	28386	.0200	.352286
+Rechallenged_H3K27me3_R1	H3K27me3	Rechallenged	1	false	133258653	79109	38161	.0200	.262047
+Rechallenged_H3K27me3_R2	H3K27me3	Rechallenged	2	false	122753241	73557	34932	.0200	.286270
+pooled_IgG_R1	IgG	pooled	1	true	13501511	207548	207548	1.5300	.048181
+pooled_IgG_R2	IgG	pooled	2	true	13179912	217641	217641	1.6500	.045947

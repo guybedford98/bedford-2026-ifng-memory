@@ -1,0 +1,34 @@
+name: ifng-msc-memory
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - numpy=2.2.3
+  - scipy=1.15.2
+  - pandas=2.2.3
+  - scikit-learn=1.6.1
+  - matplotlib=3.10.8
+  - seaborn
+  - statsmodels
+  - openpyxl
+  - pyyaml
+  - pysam=0.23.0
+  - fastp=0.24.0
+  - trim-galore
+  - cutadapt
+  - fastqc
+  - multiqc
+  - bowtie2=2.5.4
+  - samtools
+  - bedtools=2.31.1
+  - deeptools=3.5.5
+  - macs2
+  - minimap2
+  - r-base=4.5.1
+  # FiberHMM and fibertools-rs are on neither conda-forge nor bioconda and are installed
+  # separately; the DAF-seq processing scripts check for them on PATH before they run.
+  - pip
+  - pip:
+      - pybigtools==0.2.4
+      - pydeseq2==0.5.4

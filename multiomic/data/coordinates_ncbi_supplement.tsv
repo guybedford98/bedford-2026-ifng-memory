@@ -1,0 +1,6 @@
+gene	chrom	body_start	body_end	strand	tss	model_length	ncbi_gene_id	parent_gene	description	coordinate_source
+LOC112268287	chr1	115539488	115541695	+	115539488	2207	112268287		uncharacterized	ncbi_eutils_2026-08-28
+LOC642969	chr12	93639902	93641618	-	93641618	1716	642969	PGAM1	phosphoglycerate mutase 1 (brain) pseudogene	ncbi_eutils_2026-08-28
+LOC653503	chr11	10271210	10272287	-	10272287	1077	653503	GNG10	G protein subunit gamma 10 pseudogene	ncbi_eutils_2026-08-28
+LOC653631	chr1	77809767	77811934	-	77811934	2167	653631	AIDA	axin interactor, dorsalization associated pseudogene	ncbi_eutils_2026-08-28
+RPL41P3	chr22	35838274	35838696	-	35838696	422	22969	RPL41	ribosomal protein L41 pseudogene 3	ncbi_eutils_2026-08-28

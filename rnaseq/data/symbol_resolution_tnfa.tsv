@@ -1,0 +1,19 @@
+query_symbol	resolved_symbol	biotype	protein_coding	source	note
+ARNTL2	BMAL2	protein_coding	True	hgnc_prev_symbol	HGNC:18984, ENSG00000029153; renamed BMAL2 after the GENCODE v44 build. Verdict carried over from GB-321/protein_coding_only.
+DDX58	RIGI	protein_coding	True	hgnc_prev_symbol	HGNC:19102, ENSG00000107201; renamed RIGI (RIG-I). Verdict carried over from GB-321/protein_coding_only.
+TMEM189	PEDS1	protein_coding	True	hgnc_prev_symbol + gencode_v44_ensg	HGNC prev_symbol -> PEDS1; ENSG00000240849 is present in v44 as PEDS1, biotype protein_coding. Recovered, not lost.
+CENPBD1P1	CENPBD2P	transcribed_processed_pseudogene	False	hgnc_prev_symbol + gencode_v44_ensg	ENSG00000213753 present in v44 as CENPBD2P.
+LINC01137	ZC3H12A-DT	lncRNA	False	hgnc_prev_symbol + gencode_v44_ensg	HGNC renamed LITATS1; ENSG00000233621 present in v44 as ZC3H12A-DT.
+MAFIP	MAFIP	unknown	False	hgnc_symbol	HGNC locus_type "unknown"; ENSG00000274847 absent from v44 gene records. Excluded as not protein-coding.
+RNA5-8SN4	RNA5-8SN4	rRNA	False	hgnc_symbol	RNA, ribosomal; ENSG00000276700 absent from v44 gene records.
+SCARNA26A	SCARNA26A	scaRNA	False	hgnc_symbol	RNA, small nucleolar.
+SNORA104	SNORA104	snoRNA	False	hgnc_symbol	RNA, small nucleolar.
+SNORA86	SNORA86	snoRNA	False	hgnc_symbol	RNA, small nucleolar.
+LOC100126784	LEISA1	lncRNA	False	ncbi_gene	GeneID 100126784, lncRNA enhancing IL-6/STAT3 signaling activation 1.
+LOC100996740	LOC100996740	ncRNA	False	ncbi_gene	GeneID 100996740, uncharacterized.
+LOC101927974	CBLL1-AS1	lncRNA	False	ncbi_gene	GeneID 101927974, CBLL1 antisense RNA 1.
+LOC105373311	LOC105373311	ncRNA	False	ncbi_gene	GeneID 105373311, uncharacterized.
+LOC105374952	NUP153-AS1	lncRNA	False	ncbi_gene	GeneID 105374952, NUP153 antisense RNA 1.
+LOC112268124	BAZ1A-AS1	lncRNA	False	ncbi_gene	GeneID 112268124, BAZ1A antisense RNA 1.
+LOC730183	SRCAP-AS1	lncRNA	False	ncbi_gene	GeneID 730183, SRCAP antisense RNA 1.
+LOC100419583		unresolved	False	none	No record in GENCODE v44, HGNC or NCBI Gene. Same gene GB-321 and GB-327 could not resolve.

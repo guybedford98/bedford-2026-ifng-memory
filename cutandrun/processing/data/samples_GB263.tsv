@@ -1,0 +1,12 @@
+sample_id	mark	condition	replicate	R1_path	R2_path	is_igg
+Naive_H3K36me2_R1	H3K36me2	Naive	1	GB-263/Naive_K36me2_S1_R1_001.trim50.fastq.gz	GB-263/Naive_K36me2_S1_R2_001.trim50.fastq.gz	false
+Naive_H3K36me2_R2	H3K36me2	Naive	2	GB-263/Naive_K36me2_S2_R1_001.trim50.fastq.gz	GB-263/Naive_K36me2_S2_R2_001.trim50.fastq.gz	false
+Stim_H3K36me2_R1	H3K36me2	Stim	1	GB-263/Stim_K36me2_S3_R1_001.trim50.fastq.gz	GB-263/Stim_K36me2_S3_R2_001.trim50.fastq.gz	false
+Stim_H3K36me2_R2	H3K36me2	Stim	2	GB-263/Stim_K36me2_S4_R1_001.trim50.fastq.gz	GB-263/Stim_K36me2_S4_R2_001.trim50.fastq.gz	false
+Naive_H3K36me3_R1	H3K36me3	Naive	1	GB-263/Naive_K36me3_S5_R1_001.trim50.fastq.gz	GB-263/Naive_K36me3_S5_R2_001.trim50.fastq.gz	false
+Naive_H3K36me3_R2	H3K36me3	Naive	2	GB-263/Naive_K36me3_S6_R1_001.trim50.fastq.gz	GB-263/Naive_K36me3_S6_R2_001.trim50.fastq.gz	false
+Stim_H3K36me3_R1	H3K36me3	Stim	1	GB-263/Stim_K36me3_S7_R1_001.trim50.fastq.gz	GB-263/Stim_K36me3_S7_R2_001.trim50.fastq.gz	false
+Stim_H3K36me3_R2	H3K36me3	Stim	2	GB-263/Stim_K36me3_S8_R1_001.trim50.fastq.gz	GB-263/Stim_K36me3_S8_R2_001.trim50.fastq.gz	false
+Stim_H3K36me3_SPARQ_R1	H3K36me3	Stim	SPARQ	GB-263/Stim_K36me3_SPARQ_R1_001.trim50.fastq.gz	GB-263/Stim_K36me3_SPARQ_R2_001.trim50.fastq.gz	false
+pooled_IgG_R1	IgG	pooled	1	GB-263/pooled_IgG_S1_S25_R1_001.trim50.fastq.gz	GB-263/pooled_IgG_S1_S25_R2_001.trim50.fastq.gz	true
+pooled_IgG_R2	IgG	pooled	2	GB-263/pooled_IgG_S2_S26_R1_001.trim50.fastq.gz	GB-263/pooled_IgG_S2_S26_R2_001.trim50.fastq.gz	true

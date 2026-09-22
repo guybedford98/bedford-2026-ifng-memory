@@ -1,0 +1,48 @@
+# Data paths for every analysis in this repository. Edit the values, not the keys.
+# Relative paths are resolved against data_root; absolute paths are used as given.
+
+data_root: /path/to/data          # root of the downloaded GEO and Zenodo data
+
+rnaseq:
+  counts: rnaseq/Combined_counts_across_samples.xlsx  # RSEM expected counts, IFNg training set (gene_id, transcript_id(s), 12 sample columns)
+  tpm_xlsx: rnaseq/Combined_TPM_values_across_samples.xlsx  # RSEM TPM workbook the DAF-seq motif ranking reads ("all data" sheet, AVG TPM columns)
+  rsem_dir: rnaseq/ifng_rsem                # per-sample RSEM .genes.results, IFNg training set
+  tnfa_rsem_dir: rnaseq/tnfa_rsem           # per-sample RSEM .genes.results, TNFa training set
+  deseq2_naive_vs_stim: rnaseq/DESeq2_results_Naive_VS_Naive+IFNg.csv  # DESeq2 results table, Naive vs Stimulated; the stat column ranks the GSEA
+  deseq2_naive_vs_rested: rnaseq/DESeq2_results_Naive_VS_Rested.csv    # DESeq2 results table, Naive vs Rested
+  deseq2_stim_vs_rechallenge: rnaseq/DESeq2_results_Naive+IFNg_VS_Trained+IFNg.csv  # DESeq2 results table, Stimulated vs Rechallenged
+  scatter_mean_tpm: rnaseq/Combined_TPMs_for_IFNg_UP.csv  # per-gene mean TPM for the Fig 1E scatter (Gene, IFNg AVG, Rechallenge AVG)
+
+crispra_rnaseq:
+  counts_day10: crispra/CF63KH-expression-matrix.tsv  # featureCounts matrix, CRISPRa CXCL11 experiment, day 10
+  counts_day21: crispra/GVSYGD-expression-matrix.tsv  # featureCounts matrix, CRISPRa CXCL11 experiment, day 21
+  sample_sheet: crispra/crispra_samples.csv # guide, day, replicate
+  gene_lengths: crispra/gene_lengths.xlsx   # RSEM per-gene lengths from the IFNg training set, the TPM length basis
+
+multiomic:
+  isg_universe: rnaseq/ISG_universe_maxTPM5_proteincoding.csv  # protein-coding ISG universe written by rnaseq/
+
+cutandrun:
+  bigwig_dir: cutandrun/bigwig              # CPM bigwigs, one per mark and condition
+  bam_dir: cutandrun/bam                    # blacklist-filtered coordinate-sorted BAMs
+  fastq_dir: cutandrun/fastq                # CUT&RUN FASTQs, the root the processing sample sheets resolve against
+  k36_bam_dir: cutandrun/bam_k36            # H3K36me2/H3K36me3 markdup BAMs from the nf-core/cutandrun run
+
+dafseq:
+  bam_dir: dafseq/bam                       # aligned deaminated-fiber BAMs, one per amplicon and condition
+  fiberhmm_dir: dafseq/fiberhmm             # FiberHMM recalled BAMs and the extracted MSP, TF and footprint BED12 per sample
+
+reference:
+  hg38_fasta: reference/hg38.fa             # hg38 genome FASTA
+  bowtie2_index: reference/bowtie2_index/hg38   # bowtie2 index prefix, no file extension
+  blacklist: reference/hg38-blacklist.v2.bed    # ENCODE hg38 blacklist v2
+  kmetstat_index: reference/kmetstat/kmetstat   # bowtie2 index prefix for the EpiCypher K-MetStat barcode panel
+  gencode_gtf: reference/gencode.v44.annotation.gtf  # GENCODE v44 annotation
+  gencode_v44_biotypes: reference/gencode_v44_gene_biotypes.tsv  # symbol, gene_type, ensembl_gene_id, one row per v44 gene record
+  protein_coding_bed6: reference/gencode_v49_proteincoding_consensus.bed6  # gene-body bed6, TSS derived by strand
+  jaspar_motifs: reference/JASPAR2024_CORE_vertebrates_non-redundant_pfms_meme.txt  # JASPAR 2024 motifs, MEME format
+
+tools:
+  seacr: /path/to/SEACR_1.1.sh    # SEACR 1.1 peak caller (CUTRUNTools build, called by absolute path)
+
+output_dir: results               # figures and tables, relative to the repository root

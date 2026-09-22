@@ -1,0 +1,6 @@
+ID,Description,NES STIM,pvalue STIM,NES Rested,pvalue Rested
+GO:0051607,defense response to virus,2.446404442,1.82E-08,1.283687346,0.228323427
+GO:0034341,response to type II interferon,2.361445973,1.82E-08,1.283053159,0.258646457
+GO:0009615,response to virus,2.342031777,1.82E-08,1.184254278,0.280022193
+GO:0071346,cellular response to type II interferon,2.297128581,1.82E-08,1.196412567,0.361328724
+GO:0042742,defense response to bacterium,2.130133868,1.82E-08,1.323265645,0.23309461

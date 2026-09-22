@@ -1,0 +1,40 @@
+{
+  "genome": "hg38",
+  "normalization": "cpm",
+  "nbins": 1000,
+  "note": "Multi-mark CUT&RUN track panels. H3K27ac and IgG deliberately excluded. All marks CPM. Bigwig filenames resolve against cutandrun.bigwig_dir in config.yaml.",
+
+  "conditions": [
+    {"key": "Naive",        "label": "Naive",        "color": "#90959a"},
+    {"key": "Stim",         "label": "Stimulated",   "color": "#4f9bcf"},
+    {"key": "Rested",       "label": "Rested",       "color": "#4b4b4c"},
+    {"key": "Rechallenged", "label": "Rechallenged", "color": "#1e5d9f"}
+  ],
+
+  "marks": [
+    {"key": "H3K4me3",  "label": "H3K4me3",  "state": "active",     "file_tmpl": "{cond}_H3K4me3_merged_cpm.bw", "conditions": ["Naive", "Stim", "Rested", "Rechallenged"]},
+    {"key": "H3K36me3", "label": "H3K36me3", "state": "active",     "file_tmpl": "{cond}_K36me3_merged_cpm.bw",  "conditions": ["Naive", "Stim"]},
+    {"key": "H3K36me2", "label": "H3K36me2", "state": "active",     "file_tmpl": "{cond}_K36me2_merged_cpm.bw",  "conditions": ["Naive", "Stim"]},
+    {"key": "H3K27me3", "label": "H3K27me3", "state": "repressive", "file_tmpl": "{cond}_H3K27me3_merged_cpm.bw", "conditions": ["Naive", "Stim", "Rested", "Rechallenged"]}
+  ],
+
+  "loci": [
+    {"gene": "CXCL11", "panel": "Fig3A"},
+    {"gene": "IDO1",   "panel": "FigS6A"}
+  ],
+
+  "variants": [
+    {"id": "v7_region_stacked_B", "layout": "region_stacked", "fill": true, "palette": "manuscript",
+     "title": "H3K4me3, H3K36me2 at TSS +/- 3 kb; H3K27me3, H3K36me3 over gene body",
+     "regions": {"H3K4me3": "tss3kb", "H3K36me2": "tss3kb", "H3K27me3": "genebody", "H3K36me3": "genebody"},
+     "toggles": [{"y_scaling": "per_mark", "gene_model": true}]}
+  ],
+
+  "region_windows": {
+    "tss3kb_halfwidth": 3000,
+    "genebody": "locus_window",
+    "genebody_override": {
+      "CXCL11": {"mode": "gene_center", "span": 15000}
+    }
+  }
+}

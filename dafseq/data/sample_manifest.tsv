@@ -1,0 +1,13 @@
+sample	locus	region	decorated_bam	mapped_bam	notes
+GB-270_IDO1_Naive_merged	IDO1	chr8:39910187-39914251	GB-270_IDO1_Naive_merged.decorated.reads.bam	GB-270_IDO1_Naive_merged.mapped.reads.bam	GB-270 all-condition IDO1 baseline
+GB-270_IDO1_Stim_merged	IDO1	chr8:39910187-39914251	GB-270_IDO1_Stim_merged.decorated.reads.bam	GB-270_IDO1_Stim_merged.mapped.reads.bam	GB-270 IDO1 first IFNg stimulation pilot condition
+GB-270_IDO1_Rested_merged	IDO1	chr8:39910187-39914251	GB-270_IDO1_Rested_merged.decorated.reads.bam	GB-270_IDO1_Rested_merged.mapped.reads.bam	GB-270 IDO1 post-IFNg rested memory condition
+GB-270_IDO1_Rechallenge_merged	IDO1	chr8:39910187-39914251	GB-270_IDO1_Rechallenge_merged.decorated.reads.bam	GB-270_IDO1_Rechallenge_merged.mapped.reads.bam	GB-270 IDO1 memory/rechallenge condition
+GB-270_CXCL11_Naive	CXCL11	chr4:76034865-76038554	GB-270_CXCL11_Naive.decorated.reads.bam	GB-270_CXCL11_Naive.mapped.reads.bam	GB-270 CXCL11 baseline
+GB-270_CXCL11_STIM	CXCL11	chr4:76034865-76038554	GB-270_CXCL11_STIM.decorated.reads.bam	GB-270_CXCL11_STIM.mapped.reads.bam	GB-270 CXCL11 first IFNg stimulation
+GB-270_CXCL11_REST	CXCL11	chr4:76034865-76038554	GB-270_CXCL11_REST.decorated.reads.bam	GB-270_CXCL11_REST.mapped.reads.bam	GB-270 CXCL11 post-IFNg rested memory condition
+GB-270_CXCL11_RECHALLENGE	CXCL11	chr4:76034865-76038554	GB-270_CXCL11_RECHALLENGE.decorated.reads.bam	GB-270_CXCL11_RECHALLENGE.mapped.reads.bam	GB-270 CXCL11 rechallenge condition
+GB-270_naive_STAT1_1	STAT1	chr2:191013310-191016238	GB-270_naive_STAT1_1.decorated.reads.bam	GB-270_naive_STAT1_1.mapped.reads.bam	GB-270 STAT1 naive baseline
+GB272_STIM_STAT1	STAT1	chr2:191013310-191016238	GB272_STIM_STAT1.decorated.reads.bam	GB272_STIM_STAT1.mapped.reads.bam	GB272 STAT1 first IFNg stimulation
+GB272_RESTED_STAT1	STAT1	chr2:191013310-191016238	GB272_RESTED_STAT1.decorated.reads.bam	GB272_RESTED_STAT1.mapped.reads.bam	GB272 STAT1 post-IFNg rested condition
+GB272_Rechallenged_STAT1	STAT1	chr2:191013310-191016238	GB272_Rechallenged_STAT1.decorated.reads.bam	GB272_Rechallenged_STAT1.mapped.reads.bam	GB272 STAT1 rechallenge condition
