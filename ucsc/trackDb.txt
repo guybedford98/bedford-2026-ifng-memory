@@ -1,0 +1,303 @@
+track cutrun_ifng_memory
+superTrack on show
+shortLabel IFNg memory CUT&RUN
+longLabel Histone PTM CUT&RUN (CPM) across Naive, Stimulated, Rested and Rechallenged MSCs
+
+    track cutrun_H3K27me3
+    parent cutrun_ifng_memory
+    compositeTrack on
+    shortLabel H3K27me3
+    longLabel H3K27me3 CUT&RUN (CPM-normalised) across the IFNg training paradigm
+    type bigWig
+    visibility full
+    autoScale group
+    maxHeightPixels 100:40:12
+    windowingFunction mean
+    alwaysZero on
+    priority 1
+
+        track H3K27me3_Naive_rep1
+        parent cutrun_H3K27me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061022/suppl/GSM10061022_Naive_H3K27me3_rep1_cpm.bw
+        shortLabel H3K27me3 Naive rep1
+        longLabel H3K27me3 CUT&RUN, Naive, rep1 (GSM10061022), CPM-normalised
+        type bigWig
+        color 128,128,128
+        priority 1
+
+        track H3K27me3_Naive_rep2
+        parent cutrun_H3K27me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061023/suppl/GSM10061023_Naive_H3K27me3_rep2_cpm.bw
+        shortLabel H3K27me3 Naive rep2
+        longLabel H3K27me3 CUT&RUN, Naive, rep2 (GSM10061023), CPM-normalised
+        type bigWig
+        color 128,128,128
+        priority 2
+
+        track H3K27me3_Stim_rep1
+        parent cutrun_H3K27me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061024/suppl/GSM10061024_Stim_H3K27me3_rep1_cpm.bw
+        shortLabel H3K27me3 Stimulated rep1
+        longLabel H3K27me3 CUT&RUN, Stimulated, rep1 (GSM10061024), CPM-normalised
+        type bigWig
+        color 107,174,214
+        priority 3
+
+        track H3K27me3_Stim_rep2
+        parent cutrun_H3K27me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061025/suppl/GSM10061025_Stim_H3K27me3_rep2_cpm.bw
+        shortLabel H3K27me3 Stimulated rep2
+        longLabel H3K27me3 CUT&RUN, Stimulated, rep2 (GSM10061025), CPM-normalised
+        type bigWig
+        color 107,174,214
+        priority 4
+
+        track H3K27me3_Rested_rep1
+        parent cutrun_H3K27me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061026/suppl/GSM10061026_Rested_H3K27me3_rep1_cpm.bw
+        shortLabel H3K27me3 Rested rep1
+        longLabel H3K27me3 CUT&RUN, Rested, rep1 (GSM10061026), CPM-normalised
+        type bigWig
+        color 64,64,64
+        priority 5
+
+        track H3K27me3_Rested_rep2
+        parent cutrun_H3K27me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061027/suppl/GSM10061027_Rested_H3K27me3_rep2_cpm.bw
+        shortLabel H3K27me3 Rested rep2
+        longLabel H3K27me3 CUT&RUN, Rested, rep2 (GSM10061027), CPM-normalised
+        type bigWig
+        color 64,64,64
+        priority 6
+
+        track H3K27me3_Rechallenged_rep1
+        parent cutrun_H3K27me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061028/suppl/GSM10061028_Rechallenged_H3K27me3_rep1_cpm.bw
+        shortLabel H3K27me3 Rechallenged rep1
+        longLabel H3K27me3 CUT&RUN, Rechallenged, rep1 (GSM10061028), CPM-normalised
+        type bigWig
+        color 33,113,181
+        priority 7
+
+        track H3K27me3_Rechallenged_rep2
+        parent cutrun_H3K27me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061029/suppl/GSM10061029_Rechallenged_H3K27me3_rep2_cpm.bw
+        shortLabel H3K27me3 Rechallenged rep2
+        longLabel H3K27me3 CUT&RUN, Rechallenged, rep2 (GSM10061029), CPM-normalised
+        type bigWig
+        color 33,113,181
+        priority 8
+
+    track cutrun_H3K4me3
+    parent cutrun_ifng_memory
+    compositeTrack on
+    shortLabel H3K4me3
+    longLabel H3K4me3 CUT&RUN (CPM-normalised) across the IFNg training paradigm
+    type bigWig
+    visibility dense
+    autoScale group
+    maxHeightPixels 100:40:12
+    windowingFunction mean
+    alwaysZero on
+    priority 2
+
+        track H3K4me3_Naive_rep1
+        parent cutrun_H3K4me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061030/suppl/GSM10061030_Naive_H3K4me3_rep1_cpm.bw
+        shortLabel H3K4me3 Naive rep1
+        longLabel H3K4me3 CUT&RUN, Naive, rep1 (GSM10061030), CPM-normalised
+        type bigWig
+        color 128,128,128
+        priority 1
+
+        track H3K4me3_Naive_rep2
+        parent cutrun_H3K4me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061031/suppl/GSM10061031_Naive_H3K4me3_rep2_cpm.bw
+        shortLabel H3K4me3 Naive rep2
+        longLabel H3K4me3 CUT&RUN, Naive, rep2 (GSM10061031), CPM-normalised
+        type bigWig
+        color 128,128,128
+        priority 2
+
+        track H3K4me3_Stim_rep1
+        parent cutrun_H3K4me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061032/suppl/GSM10061032_Stim_H3K4me3_rep1_cpm.bw
+        shortLabel H3K4me3 Stimulated rep1
+        longLabel H3K4me3 CUT&RUN, Stimulated, rep1 (GSM10061032), CPM-normalised
+        type bigWig
+        color 107,174,214
+        priority 3
+
+        track H3K4me3_Stim_rep2
+        parent cutrun_H3K4me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061033/suppl/GSM10061033_Stim_H3K4me3_rep2_cpm.bw
+        shortLabel H3K4me3 Stimulated rep2
+        longLabel H3K4me3 CUT&RUN, Stimulated, rep2 (GSM10061033), CPM-normalised
+        type bigWig
+        color 107,174,214
+        priority 4
+
+        track H3K4me3_Rested_rep1
+        parent cutrun_H3K4me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061034/suppl/GSM10061034_Rested_H3K4me3_rep1_cpm.bw
+        shortLabel H3K4me3 Rested rep1
+        longLabel H3K4me3 CUT&RUN, Rested, rep1 (GSM10061034), CPM-normalised
+        type bigWig
+        color 64,64,64
+        priority 5
+
+        track H3K4me3_Rested_rep2
+        parent cutrun_H3K4me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061035/suppl/GSM10061035_Rested_H3K4me3_rep2_cpm.bw
+        shortLabel H3K4me3 Rested rep2
+        longLabel H3K4me3 CUT&RUN, Rested, rep2 (GSM10061035), CPM-normalised
+        type bigWig
+        color 64,64,64
+        priority 6
+
+        track H3K4me3_Rechallenged_rep1
+        parent cutrun_H3K4me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061036/suppl/GSM10061036_Rechallenged_H3K4me3_rep1_cpm.bw
+        shortLabel H3K4me3 Rechallenged rep1
+        longLabel H3K4me3 CUT&RUN, Rechallenged, rep1 (GSM10061036), CPM-normalised
+        type bigWig
+        color 33,113,181
+        priority 7
+
+        track H3K4me3_Rechallenged_rep2
+        parent cutrun_H3K4me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061037/suppl/GSM10061037_Rechallenged_H3K4me3_rep2_cpm.bw
+        shortLabel H3K4me3 Rechallenged rep2
+        longLabel H3K4me3 CUT&RUN, Rechallenged, rep2 (GSM10061037), CPM-normalised
+        type bigWig
+        color 33,113,181
+        priority 8
+
+    track cutrun_H3K36me2
+    parent cutrun_ifng_memory
+    compositeTrack on
+    shortLabel H3K36me2
+    longLabel H3K36me2 CUT&RUN (CPM-normalised) across the IFNg training paradigm
+    type bigWig
+    visibility dense
+    autoScale group
+    maxHeightPixels 100:40:12
+    windowingFunction mean
+    alwaysZero on
+    priority 3
+
+        track H3K36me2_Naive_rep1
+        parent cutrun_H3K36me2 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061038/suppl/GSM10061038_Naive_H3K36me2_rep1_cpm.bw
+        shortLabel H3K36me2 Naive rep1
+        longLabel H3K36me2 CUT&RUN, Naive, rep1 (GSM10061038), CPM-normalised
+        type bigWig
+        color 128,128,128
+        priority 1
+
+        track H3K36me2_Naive_rep2
+        parent cutrun_H3K36me2 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061039/suppl/GSM10061039_Naive_H3K36me2_rep2_cpm.bw
+        shortLabel H3K36me2 Naive rep2
+        longLabel H3K36me2 CUT&RUN, Naive, rep2 (GSM10061039), CPM-normalised
+        type bigWig
+        color 128,128,128
+        priority 2
+
+        track H3K36me2_Stim_rep1
+        parent cutrun_H3K36me2 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061040/suppl/GSM10061040_Stim_H3K36me2_rep1_cpm.bw
+        shortLabel H3K36me2 Stimulated rep1
+        longLabel H3K36me2 CUT&RUN, Stimulated, rep1 (GSM10061040), CPM-normalised
+        type bigWig
+        color 107,174,214
+        priority 3
+
+        track H3K36me2_Stim_rep2
+        parent cutrun_H3K36me2 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061041/suppl/GSM10061041_Stim_H3K36me2_rep2_cpm.bw
+        shortLabel H3K36me2 Stimulated rep2
+        longLabel H3K36me2 CUT&RUN, Stimulated, rep2 (GSM10061041), CPM-normalised
+        type bigWig
+        color 107,174,214
+        priority 4
+
+    track cutrun_H3K36me3
+    parent cutrun_ifng_memory
+    compositeTrack on
+    shortLabel H3K36me3
+    longLabel H3K36me3 CUT&RUN (CPM-normalised) across the IFNg training paradigm
+    type bigWig
+    visibility dense
+    autoScale group
+    maxHeightPixels 100:40:12
+    windowingFunction mean
+    alwaysZero on
+    priority 4
+
+        track H3K36me3_Naive_rep1
+        parent cutrun_H3K36me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061042/suppl/GSM10061042_Naive_H3K36me3_rep1_cpm.bw
+        shortLabel H3K36me3 Naive rep1
+        longLabel H3K36me3 CUT&RUN, Naive, rep1 (GSM10061042), CPM-normalised
+        type bigWig
+        color 128,128,128
+        priority 1
+
+        track H3K36me3_Naive_rep2
+        parent cutrun_H3K36me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061043/suppl/GSM10061043_Naive_H3K36me3_rep2_cpm.bw
+        shortLabel H3K36me3 Naive rep2
+        longLabel H3K36me3 CUT&RUN, Naive, rep2 (GSM10061043), CPM-normalised
+        type bigWig
+        color 128,128,128
+        priority 2
+
+        track H3K36me3_Stim_rep1
+        parent cutrun_H3K36me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061044/suppl/GSM10061044_Stim_H3K36me3_rep1_cpm.bw
+        shortLabel H3K36me3 Stimulated rep1
+        longLabel H3K36me3 CUT&RUN, Stimulated, rep1 (GSM10061044), CPM-normalised
+        type bigWig
+        color 107,174,214
+        priority 3
+
+        track H3K36me3_Stim_rep2
+        parent cutrun_H3K36me3 on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061045/suppl/GSM10061045_Stim_H3K36me3_rep2_cpm.bw
+        shortLabel H3K36me3 Stimulated rep2
+        longLabel H3K36me3 CUT&RUN, Stimulated, rep2 (GSM10061045), CPM-normalised
+        type bigWig
+        color 107,174,214
+        priority 4
+
+    track cutrun_IgG
+    parent cutrun_ifng_memory
+    compositeTrack on
+    shortLabel IgG
+    longLabel IgG CUT&RUN (CPM-normalised) across the IFNg training paradigm
+    type bigWig
+    visibility hide
+    autoScale group
+    maxHeightPixels 100:40:12
+    windowingFunction mean
+    alwaysZero on
+    priority 5
+
+        track IgG_pooled_rep1
+        parent cutrun_IgG on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061046/suppl/GSM10061046_pooled_IgG_rep1_cpm.bw
+        shortLabel IgG pooled IgG rep1
+        longLabel IgG CUT&RUN, pooled IgG, rep1 (GSM10061046), CPM-normalised
+        type bigWig
+        color 189,189,189
+        priority 1
+
+        track IgG_pooled_rep2
+        parent cutrun_IgG on
+        bigDataUrl https://ftp.ncbi.nlm.nih.gov/geo/samples/GSM10061nnn/GSM10061047/suppl/GSM10061047_pooled_IgG_rep2_cpm.bw
+        shortLabel IgG pooled IgG rep2
+        longLabel IgG CUT&RUN, pooled IgG, rep2 (GSM10061047), CPM-normalised
+        type bigWig
+        color 189,189,189
+        priority 2

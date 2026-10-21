@@ -1,0 +1,5 @@
+hub bedford2026_ifng_memory
+shortLabel IFNg memory CUT&RUN
+longLabel Histone PTM CUT&RUN across the IFNg training paradigm in human MSCs (Bedford et al.)
+genomesFile genomes.txt
+email diehl@rice.edu
