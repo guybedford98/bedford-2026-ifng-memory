@@ -1,3 +1,0 @@
-genome hg38
-trackDb trackDb.txt
-defaultPos chr4:76030000-76042000
